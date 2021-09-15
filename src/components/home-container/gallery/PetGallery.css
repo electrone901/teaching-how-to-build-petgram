@@ -1,0 +1,25 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.imageList {
+    width: 500;
+    height: 450;
+}
+
+.icon {
+    color: 'rgba(255, 255, 255, 0.001)';
+}
+
+.view-btn {
+    text-transform: capitalize;
+    border-color: #9d9e9b;
+}
+
+.gridList {
+    width: 500;
+    height: 700;
+}
