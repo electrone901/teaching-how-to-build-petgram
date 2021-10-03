@@ -123,6 +123,8 @@ export const Navbar = () => {
 
             <div className="grow" />
             <div className="sectionDesktop">
+              {/* Add Account  */}
+
               <IconButton
                 edge="end"
                 aria-label="account of current user"

@@ -13,6 +13,8 @@ import {
 } from '@material-ui/core'
 
 function CreatePet() {
+  // Add variables
+
   const handleImage = (event) => {}
 
   const handleSubmit = async (e) => {}
@@ -27,11 +29,10 @@ function CreatePet() {
           <Typography className="title" color="textPrimary" gutterBottom>
             Add a photo of your pet
           </Typography>
+          
+          {/* Add Form */}
 
-          {/* Display image to be upload */}
-          <div className="form-container">
-            <h1>Add Form here</h1>
-          </div>
+
         </div>
       </Container>
     </StylesProvider>
