@@ -1,14 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
-import Grid from '@material-ui/core/Grid'
-import Container from '@material-ui/core/Container'
-import Typography from '@material-ui/core/Typography'
-import Button from '@material-ui/core/Button'
 import FavoriteIcon from '@material-ui/icons/Favorite'
 import ShareIcon from '@material-ui/icons/Share'
-import Card from '@material-ui/core/Card'
-import { StylesProvider } from '@material-ui/core/styles'
-import './PetDetails.css'
 import {
   TextField,
   List,
@@ -17,14 +10,38 @@ import {
   ListItemText,
   Avatar,
   IconButton,
+  Grid,
+  Container,
+  Typography,
+  Button,
+  Card,
+  StylesProvider,
 } from '@material-ui/core'
+import './PetDetails.css'
+
 
 function PetDetails({ account, contractData }) {
+  const { petId } = useParams()
+  // Add state variables
+
+  useEffect(() => {
+    if (petId) {
+      getMetadata()
+      getImage()
+    }
+  }, [petId, contractData])
+
+  const getImage = (ipfsURL) => {}
+
+  const getMetadata = async () => {}
+
+  const mintNFT = async (petId) => {}
+
   const handleChange = (event) => {}
 
   const handleSubmit = (event) => {}
 
-  const mintNFT = async (petId) => {}
+
 
   return (
     <StylesProvider injectFirst>
@@ -36,15 +53,15 @@ function PetDetails({ account, contractData }) {
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} className="grid-container">
               Add pet's details here
-              {/* Add pet's details here */}
+              {/* Add pet details */}
             </Grid>
 
             <Grid item xs={12} sm={6}>
               {/*Add Transaction Confirmation: */}
 
-              {/* Add form comments */}
+              {/* Add form */}
 
-              {/* Display Comments  */}
+              {/* Display comments  */}
             </Grid>
           </Grid>
         </div>
