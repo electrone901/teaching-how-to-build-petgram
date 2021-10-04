@@ -8,6 +8,14 @@ import PetDetails from './components/home-container/pet-details/PetDetails'
 import CreatePet from './components/create-post/CreatePet'
 
 function App() {
+  // Add variables
+
+  const loadWeb3 = async () => {}
+
+  const getContract = async () => {}
+
+  const connectWallet = async () => {}
+
   return (
     <Router>
       <div className="cl">
