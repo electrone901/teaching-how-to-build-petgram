@@ -52,8 +52,9 @@ function PetDetails({ account, contractData }) {
         <div className="">
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} className="grid-container">
-              Add pet's details here
               {/* Add pet details */}
+
+              
             </Grid>
 
             <Grid item xs={12} sm={6}>
