@@ -17,7 +17,7 @@ function PetGallery() {
 
   return (
     <div style={{ minHeight: '70vh', paddingBottom: '3rem' }}>
-      {/* Add petsData */}
+       {/* Add pet's Data */}
 
 
     </div>
